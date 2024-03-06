@@ -1,0 +1,195 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: #b5cab0;
+        }
+        #intro img{
+            height:250px;
+            width:200px;
+        }
+
+        header {
+            color: #000;
+            padding: 10px 20px;
+            position: fixed;
+            width: calc(100% - 30px);
+            top: 0;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 3px solid #000;
+            background-color: #7d7d69;
+            margin-bottom: 4px;
+            
+        }
+        nav :hover {
+            color: rgb(196, 54, 54);
+          }
+
+        .logo {
+            font-size: 1.5rem;
+            padding-right: 20px;
+        }
+
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: underline;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        section {
+            text-align: center;
+            border: 2px solid black;
+            padding: 20px;
+            padding-top: 30px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            border-radius: 20px;
+	       
+        }
+
+        #timeline li,#hobbies li,#achievements li,#awards li{
+            background-color: beige;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        h2{
+            background-color: #89896f;
+            border-radius: 25px;
+        }
+        #img-collection{
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            /*background-color: #81bff2e4;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #img-collection img {
+            padding: 15px;
+            height: 250px;
+            width:250px;
+            border-radius:10px;
+        }
+
+        .papers,
+        .blogs {
+            display: flex;
+            justify-content: space-around;
+            /*gap: 2px;*/
+        }
+
+        .paper
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #efefe4;
+            flex: 1;
+            text-align: center;
+        }
+        .blog {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #efefe4;
+            flex: 1;
+            text-align: justify;
+        }
+        .page_up img
+        {
+            width: 25px;
+            height: 25px;
+            margin-top: 8px;
+        }
+        .paper img{
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+            nav {
+                display: none;
+            }
+
+            nav.show {
+                display: flex;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+            }
+
+            nav.show a {
+                padding: 10px;
+                text-decoration: none;
+                color: #fff;
+            }
+            .papers,
+            .blogs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .paper,
+            .blog {
+                width: 80%;
+            }
+        }
+        
+       
+        #image-collection h2 {
+            text-align: center;
+        }
+        
+
+        #intro {
+            padding-top: 60px; 
+        }
+
+        
+        #about p,
+        #timeline ol,
+        #achievements ul,
+        #hobbies ul,
+        #awards ol {
+            text-align: left;
+             
+        }
+        
+        
+        #about,#timeline {
+            text-align: left;
+        }
+
+        
+       #about h2,#timeline h2,
+        #hobbies h2,
+        #achievements h2,
+        #awards h2 {
+            text-align: center;
+        }
